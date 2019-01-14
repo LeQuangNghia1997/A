@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClassDate</title>
+</head>
+<body>
+<script>
+    var MyDate = function (day,month,year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.getDay = function () {
+            return this.day;
+        }
+        this.getMonth = function () {
+            return this.month;
+        }
+        this.getYear = function () {
+            return this.year;
+        }
+        this.setDay = function(day) {
+            this.day  = day;
+        }
+        this.setMonth = function(month) {
+            this.month  = month;
+        }
+        this.setYear = function(year) {
+            this.year  = year;
+        }
+        this.setDate = function () {
+            this.day = prompt("Ngày nhập vào là : ");
+            this.month = prompt("Tháng nhập vào là: ");
+            this.year = prompt("Năm nhập vào là :");
+        }
+        this.toString() = function () {
+            document.write(this.day + "/" +this.month +"/" +this.year);
+        }
+    }
+    var date = new MyDate(1,1,1997);
+    var day = date.getDay();
+    var month = date.getMonth();
+    var year = date.getYear();
+    date.setDate();
+    date.toString();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num  = parseInt(prompt("Nhập vào số lượng số nguyên tố:  "));
+    var count = 0;
+    var N = 2 ;
+    while(count<num){
+        if(kiemtrasonguyento(N))
+        {
+            document.write("các nguyên tố là " +N+ "<br/>");
+            count++;
+        }
+        N++;
+    }
+function  kiemtrasonguyento(m) {
+    var check = true;
+    for(var i=2 ;i<m;i++){
+        if(m%i==0){
+            check = false;
+        }
+    }
+    return check;
+}
+
+</script>
+</body>
+</html>
